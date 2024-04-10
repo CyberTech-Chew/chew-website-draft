@@ -1,0 +1,187 @@
+/* ContactMe Webpage's CSS */
+
+
+.contact{
+    background-color: rgb(252, 248, 241);
+    flex-direction: column;
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 6%;
+}
+
+.header {
+    text-align: center;
+    font-size: 250%;
+    padding-top: 5%;
+}
+
+
+
+/* Form Styling */
+.formBox {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding-block: 2%;
+    padding-inline: 5%;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    font-size: 120%;
+}
+
+.formBox input,
+.formBox textarea {
+    cursor: auto;
+    color: blue;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 8px;
+    margin-bottom: 10px; 
+}
+
+.formBox textarea {
+    max-width: 100%;
+    height: 150px;
+    max-height: 150%;
+    resize: vertical; 
+}
+
+.formBox input[type="submit"] {
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    cursor: pointer;
+    border: none;
+    background-color: rgb(17, 6, 219);
+    border-radius: 20px;
+    padding-inline: 10%;
+    padding-block: 2%;
+}
+
+.notification {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    width: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+.success {
+    background-color: #4cb14f;
+    color: white;
+}
+
+.error {
+    background-color: #f44336;
+    color: white;
+}
+
+
+
+
+/* Social media styling */
+.socialsBox {
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    padding-block: 2%;
+    padding-inline: 5%;
+    margin-top: 5%;
+    margin-left: 30%;
+    margin-right: 30%;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+}
+
+.linkedIn,
+.instagram{
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    flex-direction: row;
+    display: flex;
+    gap: 10%;
+    padding-left: 10%;
+    padding-top:5%;
+    padding-bottom: 5%;
+    
+}
+
+.fa {
+    font-size: 1000%;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .faLinkedin {
+    color: rgb(0, 0, 0);
+  }
+
+  .faInstagram {
+    color: rgb(0, 0, 0);
+  }
+
+.linkedInDetails,
+.instagramDetails {
+    margin-top: auto;
+    margin-bottom: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-start;
+}
+
+.linkedInDetails a,
+.instagramDetails a{
+    background-color: rgb(17, 6, 219) ;
+    color: white;
+    border-radius: 20px;
+    text-align: right;
+    padding-inline: 10%;
+}
+
+
+
+/* RESIZING CSS*/
+@media only screen and (max-width: 600px) {
+    .formBox, .socialsBox {
+        margin: 5%;
+    }
+    .linkedIn, .instagram {
+        flex-direction: column;
+        gap: 5%;
+        padding: 5%;
+    }
+    .fa {
+        font-size: 200%;
+    }
+    .linkedInDetails, .instagramDetails {
+        align-items: center;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .formBox, .socialsBox {
+        margin: 10%;
+    }
+    .linkedIn, .instagram {
+        gap: 10%;
+        padding: 5%;
+    }
+    .fa {
+        font-size: 300%;
+    }
+}

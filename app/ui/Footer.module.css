@@ -1,0 +1,74 @@
+.footer {
+    background-color: #333; 
+    color: white;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    left: 0;            /* Ensure footer starts from the left edge */
+    right: 0;           /* Ensure footer ends at the right edge */
+    z-index: 999;       /* Ensure footer is above other content */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    padding: 1%;
+    flex-direction: row;
+    display: flex;
+}
+
+
+.left {
+    margin-left: 7%;
+    flex: 1; /* Use flex to make it take remaining space */
+}
+.copyright {
+    font-size: 0.8rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
+}
+
+.feedback,
+.write,
+.follow {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.feedback h4,
+.write h4,
+.follow h4 {
+    margin-bottom: 15px;
+}
+
+.email,
+.form {
+    color: #dae5eb;
+    font-size: 80%;
+}
+
+
+/* Follow Icons styling*/
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 5px;
+    border-radius: 20%;
+  }
+  .faLinkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .faInstagram {
+    background: #125688;
+    color: white;
+  }
+
+  

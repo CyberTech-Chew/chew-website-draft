@@ -1,0 +1,179 @@
+/* AboutMe Webpage's CSS */
+
+
+.aboutMePage {
+    background-color: rgb(252, 248, 241);
+    flex-direction: column;
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.header {
+    text-align: center;
+    font-size: 250%;
+    padding-top: 5%;
+}
+
+.box{
+    margin: 0 15%;
+    background-color: rgb(228, 228, 227);
+    border-radius: 20px;
+    box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+    height: auto;
+    
+    display:flex;
+    flex-direction: row;
+
+}
+
+
+/* Left Side of the Box */
+.leftBox {
+    width: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    
+    background-image: url("/marble.png");
+    background-size: cover; 
+    background-position: center;
+    
+}
+
+.picture {
+    padding-top: 5%;
+    padding-bottom: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    border-radius: 20%;
+    height: 80%;
+    width: 80%;
+}
+
+.pictureLeftButton,
+.pictureRightButton{
+    background-color: #333;
+    color:white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 20%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    margin-inline-start: 20%;
+    transition: opacity 0.3s ease;
+}
+.pictureLeftButton:hover,
+.pictureRightButton:hover {
+    opacity: 1;
+}
+
+.pictureLeftButton {
+    left: 10px;
+}
+
+.pictureRightButton {
+    right: 10px;
+}
+
+
+
+
+/* Right Side of the box */
+.rightBox {
+    width: 60%;
+    border-radius: 20px;
+    background-color: rgb(233, 223, 200);
+}
+
+.rightBoxContent {
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.rightBoxContent button {
+    background-color: rgb(161, 158, 173);
+    cursor: pointer;
+    font-size: 105%;
+    opacity: 0.8;
+    border: none;
+    border-radius: 5px;
+}
+
+.computingNavigation,
+.sportNavigation,
+.leisureNavigation {
+    text-align: center;
+}
+
+.buttons{
+    background-color: rgb(139, 136, 153);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+
+/* RESIZING CSS*/
+@media screen and (max-width: 1024px) {
+    .box {
+        flex-direction: column;
+        margin: 0 10%;
+    }
+
+    .leftBox,
+    .rightBox {
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .rightBoxContent {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .pictureLeftButton,
+    .pictureRightButton {
+        width: 30%;
+        margin-inline-start: 35%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        margin: 0 5%;
+    }
+
+    .leftBox {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .rightBox {
+        width: 100%;
+    }
+
+    .pictureLeftButton,
+    .pictureRightButton {
+        width: 40%;
+        margin-inline-start: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .pictureLeftButton,
+    .pictureRightButton {
+        width: 50%;
+        margin-inline-start: 25%;
+    }
+}
