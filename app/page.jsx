@@ -27,7 +27,7 @@ function RightSide (){
   return (
     <div className={styles.rightSideBox}>
       <p className={styles.intro}>Hello!</p>
-      <p className={styles.brief}>Here's who I am & what I do</p>
+      <p className={styles.brief}>Here&quot;s who I am & what I do</p>
       <a href="/About" className={styles.button1}><span>ABOUT ME</span></a>
       <a href="/Resume" className={styles.button2}><span>RESUME</span></a>
       <p>Welcome to my personal website. I am glad you are here! Hop onto my website to know me deeper.</p>

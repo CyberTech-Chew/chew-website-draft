@@ -36,7 +36,7 @@ function ContactMe() {
   };
     return (
         <div>
-            <h1 className={styles.header}><strong>Let's talk</strong></h1>
+            <h1 className={styles.header}><strong>Let&quot;s talk</strong></h1>
 
             {/* In Built Form */}
             <div className={styles.formBox}>

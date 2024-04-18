@@ -1,13 +1,12 @@
 //About Me page
 
 'use client'
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./page.module.css";
 
 
-  
+
 function Section1({ title, data }) {
-    const [sectionIndex, setSectionIndex] = useState(0);
     const [imageIndex, setImageIndex] = useState(0);
     const [showAchievements, setShowAchievements] = useState(false);        //Set achievements to none until there is
 
@@ -22,7 +21,9 @@ function Section1({ title, data }) {
     useEffect(() => {
         const timer = setInterval(nextImage, 5000);
         return () => clearInterval(timer);
-    }, []);
+    }, [
+        nextImage
+    ]);
 
     const toggleAchievements = () => {
         setShowAchievements(!showAchievements);
@@ -76,7 +77,7 @@ function Aboutme() {
     const [selectedSport, setSelectedSport] = useState("taekwondo");
     const [selectedComputing, setSelectedComputing] = useState("coding");
     const [selectedLeisure, setSelectedLeisure] = useState("drone");
-    
+
     const sportsData = {
         taekwondo: {
             title: "Taekwondo",
