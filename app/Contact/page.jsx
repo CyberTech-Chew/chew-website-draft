@@ -9,7 +9,7 @@ import emailjs from '@emailjs/browser';
 function ContactMe() {
     const form = useRef();
     const [showSuccessNotification, setShowSuccessNotification] = useState(false);
-    const [showErrorNotification, setShowErrorNotification] = useState(false);
+    const [showErrorNotification] = useState(false);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -22,21 +22,15 @@ function ContactMe() {
       })
       .then(
         () => {
-          console.log('It was rendered fine,Message Sent!')
           setShowSuccessNotification(true);
           setTimeout(() => setShowSuccessNotification(false), 3000);
           e.target.reset();                     //Clear the form after submitting
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-          setShowErrorNotification(true);
-          setTimeout(() => setShowErrorNotification(false), 3000)
-        },
+        }
       );
   };
     return (
         <div>
-            <h1 className={styles.header}><strong>Let&quot;s talk</strong></h1>
+            <h1 className={styles.header}><strong>Let&#39;s talk</strong></h1>
 
             {/* In Built Form */}
             <div className={styles.formBox}>
@@ -67,7 +61,7 @@ function ContactMe() {
                     {/* Checkbox */}
                     <div>
                         <input type="checkbox" required/>
-                        <label className={styles.checkboxLabel}>I understand Jun Wei will contact me via email</label>
+                        <label className={styles.checkboxLabel}>I understand Jun Wei will contact me via email provided</label>
                     </div>
 
                     <input type="submit" value="Send" /> <br />

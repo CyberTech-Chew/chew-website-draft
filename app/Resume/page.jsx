@@ -88,7 +88,7 @@ function Myresume() {
             duration: "Aug 2023 - Oct 2023",
             name: "Human Resource Coordinator",
             title: "MCI Group of Companies",
-            location: "Company Location",
+            location: "80 Jurong East Street 21",
             description: "During my 3 months in the company, I have been assigned with a team to do back-end work for 2023 presidential events.",
             addDescription: "Had the privilege of working with ST Logistics in executing the election smoothly."
         }
@@ -127,32 +127,23 @@ function Myresume() {
     const awardData = [
         {
             duration: [
-                "2018",
-                "2019",
-                "2020",
-                "2021",
                 "2022",
                 "2023",
-                "2023"
+                "2018 - 2023",
+                "2024"
 
             ],
             title:[
-                "Edusave Scholarship",
-                "Edusave Certificate Of Academic Achievement",
-                "Edusave Scholarship",
-                "Edusave Scholarship",
                 "Mr and Mrs Ho Choy Shing Memorial Prize",
                 "Student Excellence Award",
-                "Edusave Certificate Of Acdemic Achievement"
+                "Edusave Scholarship",
+                "Student Excellence Award",
             ],
             description:[
-                "For achieving excellent academic performance and demonstrating good conduct",
-                "For achieving good academic performance and demonstrating good conduct",
-                "For achieving excellent academic performance and demonstrating good conduct",
-                "For achieving excellent academic performance and demonstrating good conduct",
                 "The most outstanding academic performance in the Technology Cluster",
                 "Full Colours Award - Taekwondo",
-                "For achieving good academic performance and demonstrating good conduct",
+                "For achieving excellent academic performance and demonstrating good conduct",
+                "Half Colours Award - Taekwondo"
             ]
             
         }
@@ -161,26 +152,41 @@ function Myresume() {
 
     const skillsData = [
         {
-            title: "Professional skillset",
+            title: "Technical skillset",
             items: [
                 "Python",
                 "C#",
-                "HTML",
-                "CSS",
+                "HTML & CSS",
                 "JavaScript",
+                "Kali Linux",
+                "Windows Server Security",
+                "Palo Alto Firewall",
+                "Network Infrasture",
+                "Ethical Hacking",
+                "Malware Analysis",
+                "Web Application Pen Testing",
                 "Data Analytics",
-                "Teamwork & Collaboration",
-                "Strategic Planner"
+                "Canva",
+                "Adobe Photoshop",
+                "Microsoft Office"
             ]
         },
+        {   title: "Personal skillset",
+            items: [
+                "Critical Thinking",
+                "Time Management",
+                "Effective Commucation",
+                "Teamwork & Collaboration",
+                "Strategic Planner"
+            ]},
         {
             title: "Language",
             items: [
-                "English",
-                "Chinese"
+                "English (Writen & Fluent)",
+                "Chinese (Fluent)"
             ]
         }
-        // Add more when got more skills...
+        // Add more accordingly when got more skills...
     ];
     
 

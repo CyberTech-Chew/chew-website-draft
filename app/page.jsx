@@ -34,7 +34,12 @@ function RightSide (){
       <p>
         This entire website is <strong>coded</strong> by me!
         <br></br>
+        Please do <strong>NOT</strong> Pen-Test or deface this website...
+        <br></br>
         For the best experience, please use a laptop and maximise the screen.
+        <br></br>
+        <br></br>
+        <a href="https://forms.gle/qNwJDsFEEAR6F3n68">Report Vulnerability</a>
       </p>
     </div>
   );
