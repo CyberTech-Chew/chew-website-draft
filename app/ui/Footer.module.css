@@ -1,33 +1,40 @@
 .footer {
-    background-color: #333; 
+    background-color: #333;
     color: white;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     position: relative;
     bottom: 0;
-    left: 0;            /* Ensure footer starts from the left edge */
-    right: 0;           /* Ensure footer ends at the right edge */
-    z-index: 999;       /* Ensure footer is above other content */
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
-    padding: 1%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0% 5%;
     flex-direction: row;
     display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line on smaller screens */
 }
-
 
 .left {
-    margin-left: 7%;
-    flex: 1; /* Use flex to make it take remaining space */
+    margin-left: 0;
+    flex: 1; 
+    font-size: 1rem; /* Use relative units for better scaling */
+    text-align: left;
 }
+
 .copyright {
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* Slightly larger font for better readability */
 }
 
 .right {
     display: flex;
     flex-direction: row;
-    margin-right: 10%;
+    gap: 2rem; /* Add space between sections */
+    justify-content: flex-end;
+    flex: 2; /* Make the right side take up more space */
+    flex-wrap: wrap; /* Allows wrapping to the next line on smaller screens */
+    margin-right: 0;
 }
 
 .feedback,
@@ -36,39 +43,99 @@
     margin-bottom: 20px;
     text-align: center;
     padding: 10px;
+    flex: 1; /* Allow each section to grow and shrink */
+    min-width: 150px; /* Ensure sections don't get too narrow on small screens */
 }
 
 .feedback h4,
 .write h4,
 .follow h4 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .email,
 .form {
     color: #dae5eb;
-    font-size: 80%;
+    font-size: 90%;
+    display: block; /* Ensure the form and email are displayed on separate lines */
 }
 
-
-/* Follow Icons styling*/
+/* Follow Icons styling */
 .fa {
     padding: 10px;
-    font-size: 20px;
+    font-size: 1.2rem; /* Use relative units for better scaling */
     width: 40px;
     text-align: center;
     text-decoration: none;
     margin: 0px 5px;
     border-radius: 20%;
-  }
-  .faLinkedin {
+}
+
+.faLinkedin {
     background: #007bb5;
     color: white;
-  }
+}
 
-  .faInstagram {
+.faInstagram {
     background: #125688;
     color: white;
-  }
+}
 
-  
+/* Media Queries for Responsiveness */
+
+/* Tablet and smaller screens */
+@media (max-width: 1024px) {
+    .footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 2% 5%;
+        text-align: center;
+    }
+
+    .left, .right {
+        width: 100%;
+        margin: 0;
+        text-align: center; /* Center align text on smaller screens */
+    }
+
+    .right {
+        justify-content: center; /* Center the right sections */
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 768px) {
+    .footer {
+        padding: 5% 3%;
+    }
+
+    .right {
+        gap: 1rem; /* Reduce space between sections */
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .fa {
+        width: 35px; /* Reduce icon size on smaller screens */
+        font-size: 1rem;
+    }
+}
+
+/* Very small mobile screens */
+@media (max-width: 480px) {
+    .footer {
+        padding: 10% 2%;
+    }
+
+    .right {
+        gap: 0.5rem; /* Further reduce space between sections */
+    }
+
+    .fa {
+        width: 30px; /* Further reduce icon size */
+        font-size: 0.9rem;
+    }
+
+    .feedback, .write, .follow {
+        padding: 5px;
+        min-width: 100px; /* Ensure sections still maintain a minimum width */
+    }
+}
