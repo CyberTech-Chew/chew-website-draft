@@ -29,6 +29,8 @@ export default function Navbar() {
                 <Link className={styles.navitem} href="/Resume">Resume</Link>
                 <Link className={styles.navitem} href="/Contact">Contact me</Link>
             </div>
+
+            
             <div className={styles.hamburger} onClick={toggleMenu}>
                 <div className={styles.bar}></div>
                 <div className={styles.bar}></div>

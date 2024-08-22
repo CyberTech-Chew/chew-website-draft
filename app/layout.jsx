@@ -2,7 +2,7 @@
 import Navbar from "@/app/ui/Navbar";
 import Footer from "@/app/ui/Footer";
 import BackToTopButton from '@/app/ui/BackToTop';
-import '@/app/globalStyles/global.css';    //Common CSS styling
+import '@/app/globalStyles/global.css';    //Common CSS styling ---> location ./app/globalStyles/global.css
 import { Inter } from 'next/font/google'
 
 
