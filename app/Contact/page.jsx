@@ -61,7 +61,7 @@ function ContactMe() {
                     {/* Checkbox */}
                     <div>
                         <input type="checkbox" required/>
-                        <label className={styles.checkboxLabel}>I understand Jun Wei will contact me via email provided</label>
+                        <label className={styles.checkboxLabel}>I understand I will contacted via email provided</label>
                     </div>
 
                     <input type="submit" value="Send" /> <br />

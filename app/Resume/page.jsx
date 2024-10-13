@@ -152,7 +152,7 @@ function Myresume() {
 
     const skillsData = [
         {
-            title: "Technical skillset",
+            title: "Technical",
             items: [
                 "Python",
                 "C#",
@@ -168,10 +168,12 @@ function Myresume() {
                 "Data Analytics",
                 "Canva",
                 "Adobe Photoshop",
-                "Microsoft Office"
+                "Microsoft Office",
+                "Digital Forensic",
+                "Cloud Architecture"
             ]
         },
-        {   title: "Personal skillset",
+        {   title: "Personal",
             items: [
                 "Critical Thinking",
                 "Time Management",
